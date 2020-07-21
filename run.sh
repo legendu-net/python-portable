@@ -7,4 +7,4 @@ docker run -it \
     -e DOCKER_GROUP_ID=$(id -g) \
     -v "$(pwd)":/workdir \
     -v "$(dirname $HOME)":/home_host \
-    dclong/python-portable /scripts/sys/init.sh -u /workdir/$1
+    dclong/python-portable /workdir/$1

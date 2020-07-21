@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-name=${1:-env_pyspark_ai}.tar.gz
+file=/workdir/${1:-env_pyspark_ai}.tar.gz
 /opt/python/bin/python3 -m pip install \
     findspark \
     loguru notifiers \
@@ -8,6 +8,5 @@ name=${1:-env_pyspark_ai}.tar.gz
     transformers
     
 cd /opt/python/
-tar -zxvf $name ./
-chown $DOCKER_USER_ID:$DOCKER_GROUP_ID $name
-mv $name /workdir/
+tar -zcvf $file ./
+chown $DOCKER_USER_ID:$DOCKER_GROUP_ID $file
