@@ -7,6 +7,8 @@ file=/workdir/${1:-env_pyspark_optimus}.tar.gz
     loguru notifiers \
     optimuspyspark
     
-cd /opt/python/
-tar -zcvf $file ./
-chown $DOCKER_USER_ID:$DOCKER_GROUP_ID $file
+if [[ $? -eq 0 ]]; then
+    cd /opt/python/
+    tar -zcvf $file ./
+    chown $DOCKER_USER_ID:$DOCKER_GROUP_ID $file
+fi
