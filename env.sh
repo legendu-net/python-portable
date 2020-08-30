@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
-file=/workdir/${1:-env_pyspark_ai}.tar.gz
+file=/workdir/${1:-env_pyspark}.tar.gz
 
 /opt/python/bin/python3 -m pip install \
-    findspark \
+    IPython \
     loguru notifiers \
-    datacompy \
-    torch==1.5.1+cpu torchvision==0.6.1+cpu -f https://download.pytorch.org/whl/torch_stable.html \
-    transformers
-
+    pandas \
+    git+https://github.com/dclong/xinstall@master \
+    git+https://github.com/dclong/dsutil@master
+    
 if [[ $? -eq 0 ]]; then
     cd /opt/python/
     tar -zcvf $file ./
