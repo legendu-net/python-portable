@@ -5,7 +5,7 @@ file=/workdir/${1:-env}.tar.gz
 /opt/python/bin/python3 -m pip install \
     IPython \
     loguru notifiers \
-    pandas \
+    pandas pyarrow \
     git+https://github.com/dclong/xinstall@master \
     git+https://github.com/dclong/dsutil@master
     
