@@ -1,3 +1,4 @@
+chmod +x "$1"
 docker run -it \
     --hostname python-portable \
     --log-opt max-size=50m \

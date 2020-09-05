@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
-file=/workdir/${1:-env_pyspark}.tar.gz
+file=/workdir/${1:-env}.tar.gz
 
 /opt/python/bin/python3 -m pip install \
+    IPython \
     loguru notifiers \
-    pyarrow datacompy
+    pandas pyarrow \
+    git+https://github.com/dclong/xinstall@master \
+    git+https://github.com/dclong/dsutil@master
     
 if [[ $? -eq 0 ]]; then
     cd /opt/python/
