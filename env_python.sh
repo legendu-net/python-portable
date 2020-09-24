@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-file=/workdir/${1:-env}.tar.gz
+file=/workdir/${1:-env_python}.tar.gz
 
 /opt/python/bin/python3 -m pip install \
     IPython \
