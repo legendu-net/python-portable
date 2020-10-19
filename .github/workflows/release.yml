@@ -11,11 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build Portable Python Environments
+      - name: Build Portable Python Environments - env_python.sh
         run: |
           ./run.sh env_python.sh
+      - name: Build Portable Python Environments - env_pyspark.sh
+        run: |
           ./run.sh env_pyspark.sh
+      - name: Build Portable Python Environments - env_pyspark_tf.sh
+        run: |
           ./run.sh env_pyspark_tf.sh
+      - name: Build Portable Python Environments - env_pyspark_torch.sh
+        run: |
           ./run.sh env_pyspark_torch.sh
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
