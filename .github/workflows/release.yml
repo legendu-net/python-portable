@@ -13,10 +13,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build Portable Python Environments
         run: |
-          ./env_python.sh
-          ./env_pyspark.sh
-          ./env_pyspark_tf.sh
-          ./env_pyspark_torch.sh
+          ./run.sh env_python.sh
+          ./run.sh env_pyspark.sh
+          ./run.sh env_pyspark_tf.sh
+          ./run.sh env_pyspark_torch.sh
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
