@@ -1,0 +1,25 @@
+name: release
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Portable Python Environments
+        run: |
+          ./env_python.sh
+          ./env_pyspark.sh
+          ./env_pyspark_tf.sh
+          ./env_pyspark_torch.sh
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          prerelease: false
+          files: |
+            *.tar.gz
