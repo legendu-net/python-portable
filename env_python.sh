@@ -3,7 +3,7 @@
 file=/workdir/${1:-env_python}.tar.gz
 
 /opt/python/bin/python3 -m pip install \
-    IPython \
+    IPython "jupyterlab<2.3.0" \
     loguru notifiers \
     pandas pyarrow \
     git+https://github.com/dclong/xinstall@master \
