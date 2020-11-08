@@ -4,7 +4,7 @@ file=/workdir/${1:-env_python}.tar.gz
 
 /opt/python/bin/python3 -m pip install \
     IPython "jupyterlab<2.3.0" nbconvert nbformat \
-    pandas pyarrow \
+    pandas pyarrow findspark \
     tqdm GitPython toml PyYAML \
     loguru notifiers \
     dateparser \
