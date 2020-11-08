@@ -1,4 +1,8 @@
 
+# [Portable Python Environments](https://github.com/dclong/python-portable)
+
+Prebuilt portable Python environmens for common tasks.
+
 ## Scripts for Building and Packing Portable Python
 
 ## env_pyspark.tar.gz
