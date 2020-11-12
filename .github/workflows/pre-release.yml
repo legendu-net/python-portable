@@ -2,7 +2,7 @@ name: Daily Pre-release
 
 on:
   schedule:
-    - cron:  '0 6 * * *'
+    - cron:  '0 14 * * *'
 
 jobs:
   daily_pre_release:
@@ -26,5 +26,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: true
+          automatic_release_tag: daily_release 
           files: |
             *.tar.gz
