@@ -26,6 +26,6 @@ jobs:
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: true
-          automatic_release_tag: daily_release 
+          automatic_release_tag: daily_build
           files: |
             *.tar.gz
