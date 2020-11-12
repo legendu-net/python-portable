@@ -2,7 +2,7 @@ name: Daily Pre-release
 
 on:
   schedule:
-    - cron:  '* 6 * * *'
+    - cron:  '0 6 * * *'
 
 jobs:
   daily_pre_release:
