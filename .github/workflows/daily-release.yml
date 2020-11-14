@@ -1,12 +1,12 @@
-name: Daily Pre-release
+name: Daily Release
 
 on:
   schedule:
     - cron:  '0 14 * * *'
 
 jobs:
-  daily_pre_release:
-    name: Daily Pre-release
+  daily_release:
+    name: Daily Release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
