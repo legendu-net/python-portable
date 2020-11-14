@@ -22,10 +22,12 @@ jobs:
       - name: Build Portable Python Environments - env_pyspark_torch.sh
         run: |
           ./run.sh env_pyspark_torch.sh
+      - name: Set Environment Variable
+        run: echo "::set-env name=TODAY::$(date +'%Y-%m-%d')"
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          prerelease: true
-          automatic_release_tag: daily_build
+          prerelease: false
+          automatic_release_tag: daily_build_${{ env.TODAY }}
           files: |
             *.tar.gz
