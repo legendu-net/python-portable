@@ -29,6 +29,4 @@ jobs:
             *.tar.gz
       - name: Verify Generated Python Environments
         run: |
-          if [[ $(ls *.tar.gz | wc -l) != 4 ]]; then
-              exit 1
-          fi
+          ./verify_build.py
