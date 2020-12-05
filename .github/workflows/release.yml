@@ -29,6 +29,6 @@ jobs:
             *.tar.gz
       - name: Verify Generated Python Environments
         run: |
-          if [[ $(ls *.tar.gz | wc -l) != 4 ]] then;
-              return 1
+          if [[ $(ls *.tar.gz | wc -l) != 4 ]]; then
+              exit 1
           fi
