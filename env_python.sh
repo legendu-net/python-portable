@@ -11,9 +11,9 @@ file=/workdir/${1:-env_python}.tar.gz
     requests \
     pylint yapf \
     opencv-python pillow PyPDF2 \
-    git+https://github.com/dclong/xinstall@master
+    git+https://github.com/dclong/xinstall@main
 
-/opt/python/bin/python3 -m pip install --no-deps git+https://github.com/dclong/dsutil@master
+/opt/python/bin/python3 -m pip install --no-deps git+https://github.com/dclong/dsutil@main
     
 if [[ $? -eq 0 ]]; then
     cd /opt/python/
