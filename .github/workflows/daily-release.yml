@@ -29,3 +29,8 @@ jobs:
           automatic_release_tag: daily_build_${{ env.TODAY }}
           files: |
             *.tar.gz
+      - name: Verify Generated Python Environments
+        run: |
+          if [[ $(ls *.tar.gz | wc -l) != 4 ]] then;
+              return 1
+          fi
