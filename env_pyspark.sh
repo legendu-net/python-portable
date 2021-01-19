@@ -4,6 +4,7 @@ file=/workdir/${1:-env_pyspark}.tar.gz
 
 /opt/python/bin/python3 -m pip install \
     loguru notifiers \
+    pyyaml \
     sqlparse \
     pyarrow datacompy
     
