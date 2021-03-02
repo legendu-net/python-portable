@@ -12,6 +12,9 @@ to build portable Python environments.
 ## Pre-developed Scripts for Building and Packing Portable Python
 
 - env_python.sh
+    
+    ./run.sh env_pyspark.sh
+    
 - env_pyspark.tar.gz
 
 ```
