@@ -4,6 +4,7 @@
 Prebuilt portable Python environmens for common tasks.
 
 ## Prerequisite
+
 The shell scripts `run.sh` must be run in an environment where Docker is installed
 as it leverages the Docker image 
 [dclong/python-portable](https://github.com/dclong/docker-python-portable) 
@@ -11,7 +12,7 @@ to build portable Python environments.
 
 ## Pre-developed Scripts for Building and Packing Portable Python
 
-| Script               | Build Command                 | Output                   | Comments                                                           |
+| Script               | Build Command                 | Output Env               | Comments                                                           |
 |----------------------|-------------------------------|--------------------------|--------------------------------------------------------------------|
 | env_python.sh        | ./run.sh env_python.sh        | env_python.tar.gz        | A portable Python env.                                             |
 | env_pyspark.sh       | ./run.sh env_pyspark.sh       | env_pyspark.tar.gz       | A portable Python env for running with PySpark.                    |
@@ -21,6 +22,6 @@ to build portable Python environments.
 ## Build Customized Portable Python Environment
 
 1. Please following examples in the `env_*.sh` scripts in the above table 
-    to develop you own cutomized scripts.
+    to develop your own cutomized scripts.
 
 2. Run your script using `./run.sh your_script.sh`.
