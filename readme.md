@@ -9,9 +9,10 @@ as it leverages the Docker image
 [dclong/python-portable](https://github.com/dclong/docker-python-portable) 
 to build portable Python environments.
 
-## Scripts for Building and Packing Portable Python
+## Pre-developed Scripts for Building and Packing Portable Python
 
-## env_pyspark.tar.gz
+- env_python.sh
+- env_pyspark.tar.gz
 
 ```
 ./run.sh env_pyspark.sh
