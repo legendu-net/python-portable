@@ -5,7 +5,9 @@ Prebuilt portable Python environmens for common tasks.
 
 ## Pre-requisite
 The shell scripts `run.sh` must be run in an environment where Docker is installed
-as it leverages the Docker image.
+as it leverages the Docker image 
+[dclong/python-portable](https://github.com/dclong/docker-python-portable) 
+to build portable Python environments.
 
 ## Scripts for Building and Packing Portable Python
 
