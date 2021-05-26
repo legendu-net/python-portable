@@ -1,7 +1,7 @@
 name: Daily Release
 on:
   schedule:
-    - cron:  '0 14 * * *'
+    - cron:  '0 14 * * 6'
 jobs:
   daily_release:
     name: Daily Release
