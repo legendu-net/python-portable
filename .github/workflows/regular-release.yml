@@ -1,10 +1,10 @@
-name: Daily Release
+name: Regular Release
 on:
   schedule:
     - cron:  '0 14 * * 6'
 jobs:
   daily_release:
-    name: Daily Release
+    name: Regular Release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
