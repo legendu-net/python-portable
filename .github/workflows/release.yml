@@ -29,4 +29,5 @@ jobs:
             *.tar.gz
       - name: Verify Generated Python Environments
         run: |
+          ls -lha
           ./verify_build.py
