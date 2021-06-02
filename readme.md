@@ -19,7 +19,6 @@ If you have such a library installed
 and thus have the Python library `pyspark` installed into the portable Python environment, 
 you can simply remove the `pyspark` library.
     
-    :::bash
     rm -rf /opt/python/lib/site-packages/pyspark*
 
 
