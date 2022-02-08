@@ -1,7 +1,7 @@
 
 # [Portable Python Environments](https://github.com/dclong/python-portable)
 
-Prebuilt portable Python environmens for common tasks.
+Prebuilt portable Python environments for common tasks.
 
 ## Prerequisite
 
