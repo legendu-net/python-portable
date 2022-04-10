@@ -5,7 +5,7 @@ file=/workdir/${1:-env_pyspark_torch}.tar.gz
 /opt/python/bin/python3 -m pip install \
     loguru notifiers \
     pyarrow datacompy \
-    torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+    torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu \
     transformers \
     pysparker
 
