@@ -6,7 +6,8 @@ file=/workdir/${1:-env_pyspark}.tar.gz
     loguru notifiers \
     pyyaml \
     sqlparse \
-    pyarrow datacompy
+    pyarrow datacompy \
+    pysparker
     
 if [[ $? -eq 0 ]]; then
     cd /opt/python/
