@@ -6,6 +6,10 @@ jobs:
   regular_release:
     name: Regular Release
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+      contents: write
     steps:
       - uses: actions/checkout@v3
       - name: Build Portable Python Environments - env_python.sh
