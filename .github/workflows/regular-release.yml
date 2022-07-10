@@ -1,7 +1,7 @@
 name: Regular Release
 on:
   schedule:
-    - cron:  '0 14 * * 6'
+    - cron:  '0 14 17 * *'
 jobs:
   regular_release:
     name: Regular Release
