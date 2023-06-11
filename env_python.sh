@@ -3,7 +3,7 @@
 file=/workdir/${1:-env_python}.tar.gz
 
 /opt/python/bin/python3 -m pip install \
-    pylint yapf pytype \
+    pylint black pytype \
     IPython "jupyterlab<2.3.0" nbconvert nbformat \
     pandas ydata-profiling pyarrow findspark \
     git+https://github.com/dclong/xinstall@main \
