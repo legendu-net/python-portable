@@ -4,10 +4,9 @@ file=/workdir/${1:-env_python}.tar.gz
 
 /opt/python/bin/python3 -m pip install \
     pylint black pytype \
-    IPython "jupyterlab<2.3.0" nbconvert nbformat \
+    IPython "jupyterlab<4.0" nbconvert nbformat \
     pandas ydata-profiling pyarrow findspark \
-    git+https://github.com/dclong/xinstall@main \
-    git+https://github.com/dclong/dsutil@main
+    aiutil
 
 if [[ $? -eq 0 ]]; then
     cd /opt/python/
